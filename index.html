@@ -1,1 +1,42 @@
-Does it work?
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+
+		<title>It Takes A Lot To Make A Stew</title>
+
+		<script src="bower_components/jquery/dist/jquery.js"></script>
+
+		<style>
+			body, html {
+				height: 100%;
+			}
+			body {
+				overflow: hidden;
+				margin: 0;
+				padding: 0;
+			}
+			div.wrap {
+				height: 100%;
+				overflow: hidden;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<iframe id="video" src="//www.youtube.com/embed/QrGrOK8oZG8?rel=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+		</div>
+
+		<script>
+			$(function() {
+				function fitVid() {
+					$('#video').css({ width: window.innerWidth + 'px', height: window.innerHeight + 'px' });
+				}
+
+				fitVid();
+
+				$(window).resize(fitVid);
+			});
+		</script>
+	</body>
+</html>
