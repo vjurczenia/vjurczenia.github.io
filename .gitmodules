@@ -1,3 +1,6 @@
 [submodule "mblg"]
 	path = mblg
 	url = https://github.com/vjurczenia/mblg.git
+[submodule "notetab"]
+	path = notetab
+	url = https://github.com/vjurczenia/notetab.git
